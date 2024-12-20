@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Adventure Club Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="clubform.css">
+
+</head>
+<body>
+    <form>
+        <div class="main">
+            <header>
+            <h1>Adventure Travel Club</h1>
+            <p>Begin Your Journey With Fellow Adventurers</p>
+        </header>
+            <!--Personal Information-->
+            <div class="personal">
+                <h2>Personal Information</h2>
+                <hr>
+            <div class="please">
+                <label for="frame">First Name</label><br>
+                <input type="text" id="frame" name="frame" placeholder="First Name" required><br>
+                <label for="newframe">Last Name</label>
+                <input type="text" id="newframe" name="newframe" placeholder="Last Name" required>
+                <br>
+            </div>
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email" placeholder="yourname@domain.com" required>
+                <br>
+                <label for="birth">Date of Birth</label><br>
+                <input type="date" id="birth" name="birth">
+            </div>
+            <!--Adventure Preferences-->
+            <div class="preferences">
+                <h2><b>Adventure Preferences</b></h2>
+                <hr>
+                <label for="experience"><b>Please Select Your Experience Level</b></label><br>
+                <select id="experience" name="experience" required>
+                    <option value="xp">Select your experience level</option>
+                    <option value="beg">Beginner</option>
+                    <option value="inter">Intermediate</option>
+                    <option value="adv">Advanced</option>
+                    <option value="exp">Expert</option>
+                </select>
+                <br>
+
+                    <label><b>Preferred Activities</b></label><br>
+
+                    <input type="checkbox" id="hiking" name="activity" value="hiking">
+                    <label for="hiking">Hiking</label><br>
+
+                    <input type="checkbox" id="rock" name="activity" value="rock climbing">
+                    <label for="rock">Rock Climbing</label><br>
+
+                    <input type="checkbox" id="kayak" name="activity" value="kayak">
+                    <label for="kayak">Kayaking</label><br>
+
+                    <input type="checkbox" id="scuba" name="activity" value="scuba">
+                    <label for="scuba">Scuba Diving</label><br>
+
+                    <label><b>Preferred Trip Duration</b></label><br>
+
+                    <div class="trip">
+                    <input type="radio" id="weekend" name="duration" value="weekend">
+                    <label for="weekend">Weekend Trips (2-3 Days)</label>
+
+                    <input type="radio" id="long" name="duration" value="long">
+                    <label for="long">Weekend Long Trips (5-7 Days)</label>
+
+                    <input type="radio" id="extended" name="duration" value="extended">
+                    <label for="extended">Extended Expeditions (2+ Weeks)</label>
+                    </div>
+
+                </div>  
+            <!--Additional Information-->
+            <div class="information">
+                <h2>Additional Information</h2>
+                <hr>
+                <label>Fitness Level (1-10) </label><br>
+                <input type="range" id="range" name="slider" min="1" max="10"><br>
+                <label for="addinfo">Tell Us About Yourself</label><br>
+                <textarea id="addinfo" name="addinfo" rows="5" cols="50" placeholder="Share your adventure experiences and what excites you to join our club!"></textarea>
+                <br>
+
+                <label for="profile">Profile Photo</label>
+                <hr>
+                <input type="file" id="profile" name="profile" accept=".jpeg, .pdf, .png">
+            </div>
+            <!--Bottom stuff-->
+            <div class="bottom">
+            <input type="checkbox" id="terms" name="tc" value="tc">
+            <label for="terms">I agree to the Terms and Conditions and Privacy Policy</label><br>
+            <input type="submit" id="submit" name="submit" value="Submit Registration">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
